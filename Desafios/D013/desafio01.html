@@ -1,52 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Letras</title>
-    <style>
-        
-    table {
+<meta charset="UTF-8">
+<title>Tabela</title>
+
+<style>
+table {
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 td {
     border: 1px solid black;
-    padding: 10px;
     width: 60px;
-}
-
-.centro {
+    height: 60px;
     text-align: center;
+    vertical-align: middle;
 }
 
-.espaco {
-    padding: 30px;
-}
-
-.grande {
-    width: 120px;
+/* Classe especial para 2, 4 e 6 */
+.largo {
+    width: 150px;          /* largura maior */
+    text-align: center;    /* garante centralização */
 }
 </style>
+
 </head>
 <body>
-    <h2>Tabelas de Números</h2>
-    <table>
-           <tr>
-            <td class="centro">1</td>
-            <td>2</td>
-            <td class="espaco">3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-         <tr>
-            <td class="centro">6</td>
-            <td>7</td>
-            <td class="grande">8</td>
-            <td>9</td>
-            <td>10</td>
-        </tr>
-    </table>
+
+<table>
+    <tr>
+        <td>1</td>
+        <td class="largo">2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td class="largo">4</td>
+        <td>5</td>
+        <td class="largo">6</td>
+    </tr>
+</table>
+
 </body>
 </html>
