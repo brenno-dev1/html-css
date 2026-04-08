@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+
+.caixa1 {
+    background-color: red;
+    grid-area: 1 / 1 / 2 / 5; 
+    /* 1ª linha / 1ª coluna / 2ª linha / 5ª coluna*/
+}
+
+.caixa2 {
+    background-color: green;
+   
+    grid-area: 2 / 1 / 4 / 3; 
+    /*  2ª linha / 1ª coluna / 4ª linha / 3ª coluna*/
+}
+
+
+.caixa3 {
+    background-color: blue; 
+   
+    grid-area: 2 / 3 / 4 / 5; 
+    /*  2ª linha / 3ª coluna / 4ª linha / 5ª coluna*/
+}
+
+/* simplificação do código 
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    grid-row:2 / span 4;
+
+    Simplificação dos códigos citados acima, onde é possível substituir as linhas e colunas por uma única propriedade, a grid-area, onde é possível definir a posição da caixa em relação às linhas e colunas do grid:
+
+    grid-area: 1 / 1 / 2 / 5; 
+             1ª linha / 1ª coluna / 2ª linha / 5ª coluna
+*/
