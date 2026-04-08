@@ -7,24 +7,29 @@
 
 .caixa1 {
     background-color: red;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-row-start: 1; /* linha onde a caixa começa */
+    grid-row-end: 2;   /* linha onde a caixa termina */
+    grid-column-start: 1; /* coluna onde a caixa começa */
+    grid-column-end: 5;  /* coluna onde a caixa termina */
 }
 
 .caixa2 {
     background-color: green;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-row-start: 2; /* linha onde a caixa começa */
+    grid-row-end: 4;   /* linha onde a caixa termina */
+    grid-column-start: 1; /* coluna onde a caixa começa */
+    grid-column-end: 3;  /* coluna onde a caixa termina */
 }
 
 .caixa3 {
-    background-color: blue;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    background-color: blue; 
+    grid-row-start: 2;        
+    grid-row-end: 4;         
     grid-column-start: 3;
     grid-column-end: 5;
 }
+
+/* simplificação do código 
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+*/
